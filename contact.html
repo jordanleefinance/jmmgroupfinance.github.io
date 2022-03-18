@@ -75,11 +75,12 @@ Although you can use them, for a more unique website, replace these images with 
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>
-    <form action="save_contacts.py" target="_blank" method="post">
+
+    <form id="contact_ticket" target="_blank" method="post">
         <p><label>First name: <input type="text" name="first_name" maxlength="100" style="width:120px;"></label></p>
         <p><label>Last name: <input type="text" name="last_name" maxlength="100" style="width:120px;"></label></p>
         <p><label>Email: <input type="email" name="email" maxlength="100" style="width:120px;"></label></p>
-        <input type="submit" value="Submit">
+        <button onclick="save_contacts.py" type="submit" value="Submit"></button>
     </form>
 
 </body>

@@ -74,10 +74,23 @@
             <div class="header-content-inner">
                 <h1>Subscribe</h1>
                 <h1>Today.</h1>
-                <a href="https://www.jmmgroupllc.xyz/subscribe/" class="btn btn-primary btn-lg">Gain knowledge</a>
-            </div>
-        </div>
-    </header>
+        <form method="post">
 
-</body>
+        <div class="container">
+            <label>
+                <input type="text" placeholder="Name" name="name" required>
+            </label>
+            <label>
+                <input type="text" placeholder="Email address" name="email" required>
+            </label>
+            <label>
+                <input type="checkbox" checked="checked" name="weekly_subscribe"> Weekly Newsletter
+            </label>
+        </div>
+
+        <div>Subscribe
+            <input type="submit">
+        </div>
+        </form>
+    </body>
 </html>
