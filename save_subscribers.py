@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, url_for, redirect
 import pandas as pd
 
 app = Flask(__name__)
@@ -6,28 +6,37 @@ file_path = r"C:\Users\jorda\OneDrive\Documents\
             Work\JMM Group LLC\Subscribers\Email_list.xlsx"
 
 @app.route('/')
-def my_form():
-    return render_template('subscribe.html')
+def home():
+    return render_template("index.html")
 
-@app.route('/', methods=['POST'])
+
+@app.route('/subscribe.html', methods=['GET', 'POST'])
 def my_form_post():
-    name = request.form['name']
-    email = request.form['email']
-    return name, email
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+        print(name)
+        print(email)
+        try:
+            with file_path as file:
+                df = pd.read_csv(file)
+                df.loc[len(df.index)] = [name, email]
+        except PermissionError:
+            df = pd.DataFrame(columns=["Name", "Email"])
+            df.loc[len(df.index)] = [name, email]
+        writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
 
-post = my_form_post()
-username = post[0]
-mail = post[1]
-try:
-    with file_path as file:
-        df = pd.read_csv(file)
-        df.loc[len(df.index)] = [username, mail]
-except PermissionError:
-    df = pd.DataFrame(columns=["First Name", "Last Name", "Email"])
-    df.loc[len(df.index)] = [username, mail]
+        df.to_excel(writer, sheet_name='Email List')
 
-writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
+        writer.save()
+        return redirect(url_for("user", usr=user))
+    else:
+        return render_template('index.html')
 
-df.to_excel(writer)
+@app.route('/<usr>')
+def user(usr=None):
+    return f'<h1>{usr}</h1>'
 
-writer.save()
+
+if __name__ == "__main__":
+    app.run()
