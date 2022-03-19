@@ -28,7 +28,8 @@ if($_POST) {
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
    // Set Message
-   $message .= "Email from: " . $name . "<br />";
+    $message = " ";
+    $message .= "Email from: " . $name . "<br />";
 	 $message .= "Email address: " . $email . "<br />";
    $message .= "Phone: " . $phone . "<br />";
    $message .= "Company: " . $company . "<br />";
@@ -49,7 +50,6 @@ if($_POST) {
    $mail = mail($to, $subject, $message, $headers);
 
 	if ($mail) { echo "OK"; }
-	if ($mail) {}
    else { echo "Something went wrong. Please try again."; }
 
 }

@@ -7,7 +7,7 @@ file_path = r"C:\Users\jorda\OneDrive\Documents\
 
 @app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template("index.html/index.html")
 
 
 @app.route('/subscribe.html', methods=['GET', 'POST'])
@@ -31,7 +31,7 @@ def my_form_post():
         writer.save()
         return redirect(url_for("user", usr=user))
     else:
-        return render_template('index.html')
+        return render_template('index.html/index.html')
 
 @app.route('/<usr>')
 def user(usr=None):
