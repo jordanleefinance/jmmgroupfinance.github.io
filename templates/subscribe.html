@@ -74,26 +74,27 @@
             <div class="header-content-inner">
                 <h1>Subscribe</h1>
                 <h1>Today</h1>
-        <form action='#' method="POST">
+                <form action='#' method="POST">
+                    <div class="center">
+                        <p><label>
+                            <input type="text" placeholder="Name" style='text-align: center' name="name" required>
+                        </label></p>
+                        <p><label>
+                            <input type="text" placeholder="Email address" style='text-align: center' name="email" required>
+                        </label></p>
+                        <p><label>
+                            <input type="checkbox" checked="checked" name="biweekly_subscribe"> Bi-Weekly Newsletter
+                        </label></p>
+                        <p><label>
+                            <input type="checkbox" checked="checked" name="monthly_subscribe"> Monthly Newsletter
+                        </label></p>
+                    </div>
 
-        <div class="center">
-            <p><label>
-                <input type="text" placeholder="Name" style='text-align: center' name="name" required>
-            </label></p>
-            <p><label>
-                <input type="text" placeholder="Email address" style='text-align: center' name="email" required>
-            </label></p>
-            <p><label>
-                <input type="checkbox" checked="checked" name="biweekly_subscribe"> Bi-Weekly Newsletter
-            </label></p>
-            <p><label>
-                <input type="checkbox" checked="checked" name="monthly_subscribe"> Monthly Newsletter
-            </label></p>
+                            <div>
+                                <input type="submit" class="btn btn-primary btn-lg" value="Subscribe">
+                            </div>
+                </form>
+            </div>
         </div>
-
-        <div>
-            <input type="submit" class="btn btn-primary btn-lg" value="Subscribe">
-        </div>
-        </form>
-    </body>
+</body>
 </html>
