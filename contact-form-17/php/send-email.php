@@ -24,7 +24,7 @@ if($_POST) {
    if ($phone == '') { $phone = "N/A"; }
    if ($company == '') { $company = "N/A"; }
 
-   
+
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
    // Set Message
@@ -53,5 +53,6 @@ if($_POST) {
    else { echo "Something went wrong. Please try again."; }
 
 }
+
 
 ?>

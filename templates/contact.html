@@ -27,7 +27,7 @@
         <div class="col-md-8">
           <div class="form h-100">
             <h3>Send us a message</h3>
-            <form class="mb-5" method="post" id="contactForm" name="contactForm" action="../contact-form-17/php/send-email.php">
+            <form class="mb-5" method="POST" id="contactForm" name="contactForm" action="../contact-form-17/php/send-email.php">
               <div class="row">
                 <div class="col-md-6 form-group mb-5">
                   <label for="name" class="col-form-label">Name *</label>
@@ -58,8 +58,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <input type="button" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" id="btnsubmit" onclick="submitForm()" src="../contact-form-17/php/send-email.php">
-                  <script> src="../contact-form-17/php/send-email.php"</script>
+                  <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" id="btnsubmit" onclick="submitForm()">
                   <span class="submitting"></span>
                 </div>
               </div>
