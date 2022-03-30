@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
         <div class="col-md-8">
           <div class="form h-100">
             <h3>Send us a message</h3>
-            <form class="mb-5" method="POST" id="contactForm" name="contactForm" action="../contact-form-17/php/send-email.php">
+            <form class="mb-5" method="POST" id="contactForm" name="contactForm">
               <div class="row">
                 <div class="col-md-6 form-group mb-5">
                   <label for="name" class="col-form-label">Name *</label>
@@ -58,16 +58,30 @@
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" id="btnsubmit" onclick="submitForm()">
+                  <button type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" id="btnsubmit" onclick="sendMail()"> Send Message </button>
+                  <script type="text/javascript">
+                    import emailjs from "@emailjs/browser";
+                    function sendMail() {
+                      document.getElementById('contactForm').addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        emailjs.sendForm('service_y9yqxzq', 'template_k4bqxsh', '#contactForm')
+                                .then(function () {
+                                  console.log('SUCCESS!');
+                                  let success = document.getElementById('btnsubmit');
+                                  let contact_form = document.getElementById('contactForm');
+                                  contact_form.reset();
+                                  success.innerHTML = "Successfully Sent";
+                                  success.style.backgroundColor = "green";
+                                  setInterval(() => window.location.reload(true), 3000)
+                                }, function(error) {
+                                  console.log('FAILED...', error)
+                                })
+                      })
+                    }
+                  </script>
                   <span class="submitting"></span>
                 </div>
               </div>
-              <script>
-                function submitForm() {
-                  document.contactForm.submit();
-                  document.contactForm.reset();
-                }
-              </script>
             </form>
 
             <div id="form-message-warning mt-4"></div> 

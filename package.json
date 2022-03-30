@@ -1,0 +1,7 @@
+{
+  "name": "jmmgroupfinance.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "@emailjs/browser": "^3.5.0"
+  }
+}
