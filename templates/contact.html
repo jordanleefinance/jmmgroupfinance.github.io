@@ -58,7 +58,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <button type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" id="btnsubmit" onclick="sendMail()"> Send Message </button>
+                  <button type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4" id="btn-submit" onclick="sendMail()"> Send Message </button>
                   <script type="text/javascript">
                     import emailjs from "@emailjs/browser";
                     function sendMail() {
@@ -67,7 +67,7 @@
                         emailjs.sendForm('service_y9yqxzq', 'template_k4bqxsh', '#contactForm')
                                 .then(function () {
                                   console.log('SUCCESS!');
-                                  let success = document.getElementById('btnsubmit');
+                                  let success = document.getElementById('btn-submit');
                                   let contact_form = document.getElementById('contactForm');
                                   contact_form.reset();
                                   success.innerHTML = "Successfully Sent";

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact For<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/integration
-            import { init } from '@emailjs/browser';
-            init('5FSmD-GxgRRcSKkWH');
+            import emailjs from "@emailjs/browser";
+            emailjs.init('5FSmD-GxgRRcSKkWH');
         })();
-    </script>m</title>
-
+    </script>
     <script type="text/javascript">
-        import emailjs from '@emailjs/browser';
+        import emailjs from "@emailjs/browser"
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
