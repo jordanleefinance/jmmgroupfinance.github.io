@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license.
+Although you can use them, for a more unique website, replace these images with your own. -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Freelance Services</title>
+    <title>JMM Group, LLC</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -16,18 +22,27 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
     <!-- Custom Fonts from Google -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            import { init } from '@emailjs/browser';
+            init('5FSmD-GxgRRcSKkWH');
+        })();
+    </script>
+
 </head>
 
 <body>
 
-   <!-- Navigation -->
+    <!-- Navigation -->
     <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Logo and responsive toggle -->
@@ -50,7 +65,7 @@
                         <a href="https://www.jmmgroupllc.xyz">Home</a>
                     </li>
                     <li>
-                        <a href="products.html">Products</a>
+                        <a href="../templates/products.html">Products</a>
                     </li>
 					<li class="dropdown">
 						<a href="../templates/services.html">Services </a>
@@ -65,26 +80,26 @@
                         <a href="https://share.streamlit.io/jordanleefinance/streamlit/main/about_me_page.py">About Me</a>
                     </li>
                     <li class="contact">
-                        <a href="contact.html">Contact</a>
+                        <a href="../templates/contact.html">Contact</a>
                     </li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>
-
-    <!-- Header -->
-    <header>
+<header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Freelance Services</h1>
-                <p>Your success begins here.</p>
-                <a href="contact.html" class="btn btn-primary btn-lg">Here</a>
-
+                <h1>Services</h1>
+                <p>Explore a variety of services.</p>
+                <a href="../templates/subscribe.html" class="btn btn-primary btn-lg">Subscribe</a>
+                <a href="../templates/projects.html" class="btn btn-primary btn-lg">Projects</a>
+                <a href="../templates/blog.html" class="btn btn-primary btn-lg">Research & Investment Blog</a>
+                <a href="../templates/freelance.html" class="btn btn-primary btn-lg">Freelance</a>
             </div>
         </div>
     </header>
-	<!-- Footer -->
+   	<!-- Footer -->
     <footer class="page-footer">
 
     	<!-- Contact Us -->
