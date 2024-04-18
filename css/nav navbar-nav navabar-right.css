@@ -1,0 +1,8 @@
+.navbar-nav>li>a {
+    color: gold; /* Set the color of the navbar links to gold */
+}
+
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover {
+    color: gold; /* Set the color of the navbar links on hover/focus to gold */
+}

@@ -1,0 +1,9 @@
+.intro {
+    background-color: black; /* Set background color to black */
+    padding: 50px 0; /* Add padding as needed */
+}
+
+.intro .img-responsive {
+    margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+    display: block; /* Ensure the image is centered properly */
+}
