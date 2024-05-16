@@ -6,7 +6,7 @@ body {
 }
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 a {
-    color: gold;
+    color: black;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -14,7 +14,7 @@ a {
 
 a:hover,
 a:focus {
-    color: gold;
+    color: black;
 }
 
 p {
@@ -96,7 +96,7 @@ header .header-content .header-content-inner p {
 
 .intro {
 	color: #fff;
-    background-color: gold;
+    background-color: black;
     padding: 70px 0;
     text-align: center;
 }
@@ -169,7 +169,7 @@ header .header-content .header-content-inner p {
 
 .page-footer .contact {
 	padding: 100px 0;
-	background-color: gold;
+	background-color: black;
 	color: #fff;
 	}
 
@@ -202,7 +202,7 @@ header .header-content .header-content-inner p {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    color: gold;
+    color: black;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -217,12 +217,12 @@ header .header-content .header-content-inner p {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: gold;
+    color: black;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: gold!important;
+    color: black!important;
     background-color: transparent;
 }
 
@@ -265,7 +265,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         letter-spacing: 0;
-        color: gold;
+        color: black;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -280,7 +280,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: gold;
+        color: black;
     }
 }
 
@@ -338,9 +338,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: gold;
+    border-color: black;
     color: #fff;
-    background-color: gold;
+    background-color: black;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -352,9 +352,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: gold;
+    border-color: black;
     color: #fff;
-    background-color: gold;
+    background-color: black;
 }
 
 .btn-primary:active,
@@ -381,12 +381,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: gold;
-    background-color: gold;
+    border-color: black;
+    background-color: black;
 }
 
 .btn-primary .badge {
-    color: gold;
+    color: black;
     background-color: #fff;
 }
 
@@ -423,9 +423,9 @@ img::-moz-selection {
 }
 
 .text-primary {
-    color: gold;
+    color: black;
 }
 
 .bg-primary {
-    background-color: gold;
+    background-color: black;
 }
