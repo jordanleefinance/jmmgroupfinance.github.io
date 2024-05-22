@@ -29,9 +29,9 @@ summary {
   display: block;
 }
 .column {
-  float: left;
+  float: middle;
   width: 33.33%;
-  column-width: 100px;
+  column-width: 40px;
 }
 
 /* Clear floats after the columns */
