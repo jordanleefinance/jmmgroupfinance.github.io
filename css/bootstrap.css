@@ -43,7 +43,7 @@ summary {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-    column-width: 300px;
+    column-width: 100px;
   }
 }
 /* The dropdown container */
