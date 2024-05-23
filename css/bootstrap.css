@@ -28,10 +28,10 @@ section,
 summary {
   display: block;
 }
-.column {
-  float: middle;
-  width: 33.33%;
-  column-width: 40px;
+.column-center {
+  width: 30%; /* Adjust the width as needed */
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Clear floats after the columns */
@@ -44,6 +44,7 @@ summary {
 @media screen and (max-width: 600px) {
   .column {
     float: middle;
+    margin: auto 0;
     text-align: center;
     column-width: 40px;
   }

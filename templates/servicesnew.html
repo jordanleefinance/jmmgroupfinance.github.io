@@ -101,72 +101,83 @@ Although you can use them, for a more unique website, replace these images with 
             <div class="header-content-inner">
                 <h1>Services</h1>
             </div>
-            <div class="row">
-                <div class="column-center">
-                    <h2>Accounting Systems Audit</h2>
-                    <p>Our initial focus is on collecting and reporting essential financial data tailored to the specific industry of the business. 
-                        We audit, implement, and actively manage our clients systems, structure, and ongoing processes needed to deliver accurate, timely, and valuable financial information for your business.</p>
-                        <style>
-                            /* Style The Dropdown Button */
-                            .dropbtn {
-                              background-color: black;
-                              color: none;
-                              padding: 16px;
-                              font-size: 16px;
-                              border: none;
-                              cursor: pointer;
-                            }
-                            
-                            /* The container <div> - needed to position the dropdown content */
-                            .dropdown {
-                              position: relative;
-                              display: inline-block;
-                            }
-                            
-                            /* Dropdown Content (Hidden by Default) */
-                            .dropdown-content {
-                              display: none;
-                              position: absolute;
-                              background-color: #f9f9f9;
-                              min-width: 160px;
-                              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                              z-index: 1;
-                            }
-                            
-                            /* Links inside the dropdown */
-                            .dropdown-content a {
-                              color: none;
-                              padding: 12px 16px;
-                              text-decoration: none;
-                              display: block;
-                            }
-                            
-                            /* Change color of dropdown links on hover */
-                            .dropdown-content a:hover {background-color: #f1f1f1}
-                            
-                            /* Show the dropdown menu on hover */
-                            .dropdown:hover .dropdown-content {
-                              display: block;
-                            }
-                            
-                            /* Change the background color of the dropdown button when the dropdown content is shown */
-                            .dropdown:hover .dropbtn {
-                              background-color: whitesmoke;
-                            }
-                        </style>
-                        <div class="dropdown-center">
-                            <button class="dropbtn">Systems Audit<span class="caret"></span>
-                            </button>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .column-center {
+                        width: 30%; /* Adjust the width as needed */
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+
+                    .dropbtn {
+                        background-color: none;
+                        color: white;
+                        padding: 16px;
+                        font-size: 16px;
+                        border: none;
+                        cursor: pointer;
+                    }
+
+                    .dropdown {
+                        position: relative;
+                        display: inline-block;
+                    }
+
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                        z-index: 1;
+                    }
+
+                    .dropdown-content p {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        margin: 0;
+                    }
+
+                    .dropdown-content p:hover {
+                        background-color: #f1f1f1;
+                    }
+
+                    .dropdown:hover .dropdown-content {
+                        display: block;
+                    }
+
+                    .dropdown:hover .dropbtn {
+                        background-color: #555;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="row">
+                    <div class="column-center">
+                        <h2>Accounting Systems Audit</h2>
+                        <p>Our initial focus is on collecting and reporting essential financial data tailored to the specific industry of the business. We audit, implement, and actively manage our clients' systems, structure, and ongoing processes needed to deliver accurate, timely, and valuable financial information for your business.</p>
+                        <div class="dropdown">
+                            <button class="dropbtn">Systems Audit<span class="caret"></span></button>
                             <div class="dropdown-content">
                                 <p>Bank Reconciliations</p>
-                                <p>Accounts Recievable Support</p>
+                                <p>Accounts Receivable Support</p>
                                 <p>Accounts Payable Support</p>
                                 <p>Payroll Processing Support</p>
                                 <p>Year-End Close Preparation</p>
                                 <p>1099 Preparation</p>
                             </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="column-center">
                     <h2>Fintech Implementation</h2>
                     <p>We serve as our clients' fractional CFO, a trusted advisor to the top executives and board of directors, providing valuable insights and expertise to drive the company's financial success and sustainable growth. 
