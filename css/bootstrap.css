@@ -28,7 +28,7 @@ section,
 summary {
   display: block;
 }
-.column {
+.column-center {
   float: middle;
   width: 33.33%;
   column-width: 40px;
@@ -42,8 +42,8 @@ summary {
 }
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    column-width: 100px;
+  .column-center {
+    column-width: 40px;
   }
 }
 /* The dropdown container */
