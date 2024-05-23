@@ -50,6 +50,7 @@ summary {
 }
 /* The dropdown container */
 .dropdown {
+  background-color: none;
   float: left;
   overflow: hidden;
 }
