@@ -43,7 +43,7 @@ a {
     cursor: pointer;
 }
 
-.dropdown {
+.dropdown-center {
     position: relative;
     display: inline-block;
 }
@@ -69,14 +69,13 @@ a {
     background-color: #f1f1f1;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-center:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:hover .dropbtn {
+.dropdown-center:hover .dropbtn {
     background-color: #555;
 }
-</style>
   /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column {
