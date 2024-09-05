@@ -133,6 +133,12 @@ summary {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.testimonial-logo {
+  width: 100px;  /* Set a fixed width for all logos */
+  height: 100px; /* Set a fixed height for all logos */
+  object-fit: contain; /* Maintain the aspect ratio of logos */
+  margin-bottom: 20px;
+}
 audio,
 canvas,
 progress,
