@@ -139,6 +139,25 @@ summary {
   object-fit: contain; /* Maintain the aspect ratio of logos */
   margin-bottom: 20px;
 }
+.client-name {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.client-title {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Style for the divider between each testimonial */
+.testimonial-divider {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  width: 80%;
+  margin: 30px auto;
+}
 audio,
 canvas,
 progress,
