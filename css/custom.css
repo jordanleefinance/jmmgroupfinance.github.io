@@ -148,6 +148,16 @@ a {
     width: 80%;
     margin: 30px auto;
   }
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Ensures the container itself is centered on the page */
+    padding: 20px;
+}
 a:hover,
 a:focus {
     color: black;
