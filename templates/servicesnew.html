@@ -116,7 +116,16 @@ Although you can use them, for a more unique website, replace these images with 
                     width: 70%; /* Adjust the width as needed */
                     margin: 0 auto;
                     text-align: center;
-                    flex: 1;
+                }
+                .column-center p,
+                .column-center ul {
+                margin: 0;
+                padding: 0;
+                flex: 1; /* Ensures both the paragraph and the list get equal space */
+                }
+
+                .column-center ul {
+                list-style-position: inside; /* Moves the bullet points inside the list item box */
                 }
 
                 .dropbtn {
