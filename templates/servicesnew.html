@@ -110,81 +110,86 @@ Although you can use them, for a more unique website, replace these images with 
                 .row {
                     display: flex;
                     justify-content: center;
+                    flex-wrap: wrap;
                 }
 
-                .column-center {
+                .container {
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
-                    align-items: flex-start;
-                    text-align: left; /* Align text to the left */
-                    width: 70%; /* Control the width of the content */
-                    margin: 0 auto; /* Center the content horizontally */
-                    gap: 20px; /* Add space between text and bullet points */
-                }
-
-                .column-center ul {
-                    list-style-position: inside;
-                    margin: 0;
-                    padding-left: 20px; /* Slight indentation for bullets */
-                    flex: 1;
-                }
-
-                .column-center p {
-                    margin: 0;
-                    flex: 1; /* Ensure the paragraph and list share space equally */
-                    padding-right: 20px;
+                    align-items: center;
+                    width: 80%; /* Adjust as needed */
+                    margin: 20px auto; /* Center each container and add spacing */
+                    padding: 20px;
+                    text-align: center;
+                    border: 1px solid #ddd; /* Optional: Add a border for visual separation */
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
                 }
 
                 h2 {
-                    text-align: center; /* Center the heading */
-                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                .container p {
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                .container ul {
+                    list-style-position: inside;
+                    text-align: left;
+                    padding-left: 0; /* Removes default padding from the left */
+                    margin: 0;
+                }
+
+                li {
+                    margin: 5px 0; /* Adds space between each bullet point */
                 }
             </style>
+                <div class="row">
+                    <div class="container">
+                        <h2>Accounting Systems Audit</h2>
+                        <p>Our initial focus is on collecting and reporting essential financial data tailored to the specific industry of the business. We audit, implement, and actively manage our clients' systems, structure, and ongoing processes to deliver accurate, timely, and valuable financial information for your business.</p>
+                        <ul>
+                            <li>Systems Audit & Implementation</li>
+                            <li>Bank Reconciliations</li>
+                            <li>Accounts Receivable Support</li>
+                            <li>Accounts Payable Support</li>
+                            <li>Payroll Processing Support</li>
+                            <li>Year-End Close Preparation</li>
+                            <li>1099 Preparation</li>
+                        </ul>
+                    </div>
 
-    
-            <div class="column-center">
-                <h2>Accounting Systems Audit</h2>
-                <p>Our initial focus is on collecting and reporting essential financial data tailored to the specific industry of the business. We audit, implement, and actively manage our clients' systems, structure, and ongoing processes to deliver accurate, timely, and valuable financial information for your business.</p>
-                <ul>
-                    <li>Systems Audit & Implementation</li>
-                    <li>Bank Reconciliations</li>
-                    <li>Accounts Receivable Support</li>
-                    <li>Accounts Payable Support</li>
-                    <li>Payroll Processing Support</li>
-                    <li>Year-End Close Preparation</li>
-                    <li>1099 Preparation</li>
-                </ul>
-            </div>
-            
-            <div class="column-center">
-                <h2>Fintech Implementation</h2>
-                <p>We serve as our clients' fractional CFO, a trusted advisor to the top executives and board of directors, providing valuable insights and expertise to drive the company's financial success and sustainable growth. Our team leverages modern technology to automate target-setting and financial analysis.</p>
-                <ul>
-                    <li>Budget Planning & Variance Analysis</li>
-                    <li>Weekly Dashboard Management</li>
-                    <li>Strategy Development</li>
-                    <li>Financial Modeling & Forecasting APIs</li>
-                    <li>Capital Project Analysis</li>
-                    <li>Risk Management</li>
-                    <li>Financial Compliance</li>
-                    <li>Scenario & Sensitivity Analysis</li>
-                    <li>Investor Relations</li>
-                </ul>
-            </div>
-            
-            <div class="column-center">
-                <h2>Consulting & Advisory Services</h2>
-                <p>We utilize our foundational expertise in accounting and finance to meet our clients' business needs. We embed consistent processes and an ongoing cycle of planning, analysis, and innovative idea generation to enhance growth.</p>
-                <ul>
-                    <li>Business Plan Audit</li>
-                    <li>Compensation Planning</li>
-                    <li>Cash-Flow Management</li>
-                    <li>Capital Structure Advisory</li>
-                    <li>Scalable Consulting</li>
-                    <li>Capital Raise Guidance</li>
-                </ul>
-            </div>
-        </div><!-- /.container-fluid -->
+                    <div class="container">
+                        <h2>Fintech Implementation</h2>
+                        <p>We serve as our clients' fractional CFO, a trusted advisor to the top executives and board of directors, providing valuable insights and expertise to drive the company's financial success and sustainable growth. Our team leverages modern technology to automate target-setting and financial analysis.</p>
+                        <ul>
+                            <li>Budget Planning & Variance Analysis</li>
+                            <li>Weekly Dashboard Management</li>
+                            <li>Strategy Development</li>
+                            <li>Financial Modeling & Forecasting APIs</li>
+                            <li>Capital Project Analysis</li>
+                            <li>Risk Management</li>
+                            <li>Financial Compliance</li>
+                            <li>Scenario & Sensitivity Analysis</li>
+                            <li>Investor Relations</li>
+                        </ul>
+                    </div>
+
+                    <div class="container">
+                        <h2>Consulting & Advisory Services</h2>
+                        <p>We utilize our foundational expertise in accounting and finance to meet our clients' business needs. We embed consistent processes and an ongoing cycle of planning, analysis, and innovative idea generation to enhance growth.</p>
+                        <ul>
+                            <li>Business Plan Audit</li>
+                            <li>Compensation Planning</li>
+                            <li>Cash-Flow Management</li>
+                            <li>Capital Structure Advisory</li>
+                            <li>Scalable Consulting</li>
+                            <li>Capital Raise Guidance</li>
+                        </ul>
+                    </div>
+                </div><!-- /.container-fluid -->
     <section class="intro" style="background-color: black;">
         <div class="container">
             <div class="row">
