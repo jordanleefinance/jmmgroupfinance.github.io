@@ -16,24 +16,6 @@ a {
     margin: 0 auto;
     text-align: center;
 }
-.column-center {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px; /* Adds spacing between the paragraph and list */
-}
-
-.column-center p, 
-.column-center ul {
-    margin: 0;
-    padding: 0;
-    flex: 1; /* Ensures both the paragraph and the list get equal space */
-}
-
-.column-center ul {
-    list-style-position: inside; /* Moves the bullet points inside the list item box */
-}
-  
   /* Clear floats after the columns */
   .row:after {
     content: "";
