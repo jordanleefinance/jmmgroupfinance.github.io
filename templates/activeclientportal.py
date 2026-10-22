@@ -11,11 +11,15 @@ from openpyxl.utils.exceptions import InvalidFileException
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 # Define the valid clients dictionary
-valid_clients = {
-    "EI": "EI2024!",
-    "AL": "A&L2024!",
-    "DLI": "DLI2024!",
-}
+# Client credentials are NOT stored in code. Set CLIENT_CREDENTIALS as an
+# environment variable, e.g. CLIENT_CREDENTIALS="EI:newpass1,AL:newpass2"
+# (or put it in a local .env file that is git-ignored).
+def _load_clients():
+    raw = os.environ.get("CLIENT_CREDENTIALS", "")
+    pairs = [item.split(":", 1) for item in raw.split(",") if ":" in item]
+    return {k.strip(): v.strip() for k, v in pairs}
+
+valid_clients = _load_clients()
 
 # Set up a dictionary to track login attempts for each session
 app.clients_data = {"attempts": 0, "authenticated": False}
@@ -78,7 +82,7 @@ def login(n_clicks, client_id, client_password):
         
         if auth_status == "Authenticated":
             app.clients_data["authenticated"] = True
-            folder_path = r"C:\Users\jorda\OneDrive\Documents\GitHub\streamlit\Website"  # Replace with actual folder path
+            folder_path = os.environ.get("FFM_FOLDER", "")  # local folder outside any git repo
             file_name = f"{client_id}_FFM.xlsx"
             file_path = os.path.join(folder_path, file_name)
 
@@ -119,7 +123,7 @@ def login(n_clicks, client_id, client_password):
 )
 def display_sheet_content(sheet_name, client_id, client_password):
     if sheet_name:
-        folder_path = r"C:\Users\jorda\OneDrive\Documents\GitHub\streamlit\Website"  # Replace with actual folder path
+        folder_path = os.environ.get("FFM_FOLDER", "")  # local folder outside any git repo
         file_name = f"{client_id}_FFM.xlsx"
         file_path = os.path.join(folder_path, file_name)
         
